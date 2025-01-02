@@ -1,0 +1,60 @@
+@main-color: pink;
+
+@font-face {
+  font-family: "FZSJ-WSMQSJW";
+  src: url("../fonts/FZSJ-WSMQSJW.woff2") format("woff2"),
+    url("../fonts/FZSJ-WSMQSJW.woff") format("woff"),
+    url("../fonts/FZSJ-WSMQSJW.ttf") format("truetype"),
+    url("../fonts/FZSJ-WSMQSJW.eot") format("embedded-opentype"),
+    url("../fonts/FZSJ-WSMQSJW.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: @main-color;
+}
+
+
+// 样式中的图片资源（背景图）
+.bg-box {
+  width: 200px;
+  height: 200px;
+}
+
+.bg-box1 {
+  background: url('../../public/images/bg01.jpg') no-repeat center/cover;
+}
+
+.bg-box2 {
+  background: url('../../public/images/bg02.jpg') no-repeat center/cover;
+}
+
+.bg-box3 {
+  background: url('../../public/images/db01.jpeg') no-repeat center/cover;
+}
+
+.bg-box4 {
+  background: url('../../public/images/db02.png') no-repeat center/cover;
+}
+
+.bg-box5 {
+  background: url('../../public/images/db03.gif') no-repeat center/cover;
+}
+
+.bg-box6 {
+  background: url('../../public/images/101.webp') no-repeat center/cover;
+}
+
+
+// 样式中的字体资源
+p {
+  font-family: 'FZSJ-WSMQSJW';
+}
+
+// css兼容性处理
+img {
+  filter: blur(10px);
+}
