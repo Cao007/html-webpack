@@ -28,6 +28,23 @@ module.exports = merge(baseConfig, {
     minimizer: [
       `...`, // 默认使用TerserPlugin压缩JS
       new CssMinimizerPlugin()
-    ]
+    ],
+    splitChunks: {
+      chunks: 'all',
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          filename: "js/vendors.[hash].js",
+          chunks: 'all',
+          minChunks: 1,
+        },
+        common: {
+          name: 'common.js',
+          chunks: 'all',
+          minChunks: 2,
+          minSize: 0,
+        }
+      }
+    }
   }
 })
