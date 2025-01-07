@@ -4,7 +4,7 @@ module.exports = {
     "node": true
   },
   "extends": [
-    "standard",
+    // "standard",
     "plugin:vue/strongly-recommended"
   ],
   "parserOptions": {
