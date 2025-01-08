@@ -2,6 +2,7 @@ const baseConfig = require('./webpack.base.config');
 const { merge } = require('webpack-merge');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const bundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = merge(baseConfig, {
 
@@ -22,6 +23,9 @@ module.exports = merge(baseConfig, {
     new MiniCssExtractPlugin({
       filename: "css/main.[hash].css",
     }),
+
+    // 打包分析
+    new bundleAnalyzerPlugin()
   ],
 
   optimization: {

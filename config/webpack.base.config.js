@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
-const bundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   entry: path.resolve(__dirname, '../src/app.js'),
@@ -93,8 +92,5 @@ module.exports = {
       context: path.resolve(__dirname, '../src'), // 指定检查的目录
       exclude: 'node_modules/**',
     }),
-
-    // 打包分析
-    new bundleAnalyzerPlugin()
   ]
 }
