@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head> 
+  <body>
+    <!-- less样式 -->
+    <div class="box">123</div>
 
-<body>
-  <!-- less样式 -->
-  <div class="box">123</div>
+    <!-- 样式中的图片资源（背景图） -->
+    <div class="bg-box bg-box1">背景1</div>
+    <div class="bg-box bg-box2">背景2</div>
+    <div class="bg-box bg-box3">背景3</div>
+    <div class="bg-box bg-box4">背景4</div>
+    <div class="bg-box bg-box5">背景5</div>
+    <div class="bg-box bg-box6">背景6</div>
 
-  <!-- 样式中的图片资源（背景图） -->
-  <div class="bg-box bg-box1">背景1</div>
-  <div class="bg-box bg-box2">背景2</div>
-  <div class="bg-box bg-box3">背景3</div>
-  <div class="bg-box bg-box4">背景4</div>
-  <div class="bg-box bg-box5">背景5</div>
-  <div class="bg-box bg-box6">背景6</div>
+    <!-- 样式中的字体 -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempora
+      magnam excepturi animi perspiciatis optio aut! Voluptates vitae, debitis
+      atque blanditiis placeat architecto cum quo eligendi excepturi velit dolor
+      dolore?
+    </p>
 
-  <!-- 样式中的字体 -->
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempora magnam excepturi animi perspiciatis optio aut! Voluptates vitae, debitis atque blanditiis placeat architecto cum quo eligendi excepturi velit dolor dolore?</p>
-
-  <!-- html中的img、音视频资源 -->
-  <img src="./images/webpack.png" alt="">
-  <video src="./videos/movie.mp4" controls="controls"></video>
-  <audio src="./audios/music.mp3" controls="controls"></audio>
-</body>
-
+    <!-- html中的img、音视频资源 -->
+    <img src="./images/webpack.png" alt="" />
+    <video src="./videos/movie.mp4" controls="controls"></video>
+    <audio src="./audios/music.mp3" controls="controls"></audio>
+  </body>
 </html>
